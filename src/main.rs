@@ -1,8 +1,10 @@
+pub mod bfs;
 pub mod jugs;
 pub mod search;
 
+use bfs::BreadthFirstSearch;
 use jugs::State;
-use search::{BreadthFirstSearch, Search};
+use search::Search;
 
 fn main() {
     let initial_state = State::Jugs(0, 0);
